@@ -9,7 +9,7 @@ export class DataService {
     baseURL: string;
 
     constructor(private http: HttpClient) {
-        this.baseURL = "https://localhost:7085/magnilearn/dashboard/";
+        this.baseURL = "https://localhost:7085/magnilearn/dashboard";
     }
 
     //User services
