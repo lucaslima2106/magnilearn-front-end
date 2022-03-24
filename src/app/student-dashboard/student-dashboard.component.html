@@ -1,0 +1,114 @@
+<div class="uk-container uk-margin-large-top">
+    <nav class="uk-navbar-container">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active">Hello, <span class="uk-text-bolder">User ID {{userId}}</span>!</li>
+        </ul>
+    </nav>
+</div>
+
+<hr>
+
+<div class="uk-container uk-margin uk-flex-center uk-width-3-3@m">
+    <div uk-grid>
+
+        <div class="uk-grid-1-3">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Effort</h3>
+                        <p>You have completed <span class="uk-badge uk-text-bolder">{{numberOfExercises}}</span> exercises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-grid-1-3">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Performance</h3>
+                        <table class="uk-table uk-table-hover uk-table-divider">
+                            <thead>
+                                <tr>
+                                    <th>Exercise ID</th>
+                                    <th>Word</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let performance of userPerformance">
+                                    <td>{{performance.exerciseId}}</td>
+                                    <td>{{performance.word}}</td>
+                                    <td>{{performance.score}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-grid-1-3">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Learned Vocabulary</h3>
+                        <table class="uk-table uk-table-hover uk-table-divider">
+                            <thead>
+                                <tr>
+                                    <th>Word</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let vocabulary of userLearnedVocabulary">
+                                    <td>{{vocabulary.word}}</td>
+                                    <td>{{vocabulary.scoreAverage}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-grid-1-3">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Your Progress</h3>
+                        <p>Starting date: <span class="uk-text-bold uk-text-primary">{{userProgress.dtIni | date:'yyyy-MM-dd'}}</span></p>
+                        <p>Last active date: <span class="uk-text-bold uk-text-primary">{{userProgress.dtEnd | date:'yyyy-MM-dd'}}</span></p>
+                        <p>Number of Exercises: <span class="uk-text-bold uk-text-primary">{{userProgress.numberOfExercises}}</span></p>
+                        <p>Score Average: <span class="uk-text-bold uk-text-primary">{{userProgress.scoreAverageOverTime | number: '1.1-2'}}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-grid-1-3">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Your Grade</h3>
+                        <table class="uk-table uk-table-hover uk-table-divider">
+                            <thead>
+                                <tr>
+                                    <th>Exercise ID</th>
+                                    <th>Average Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let grade of userGrade">
+                                    <td>{{grade.exerciseId}}</td>
+                                    <td>{{grade.scoreAverage | number: '1.1-2'}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

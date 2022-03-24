@@ -1,0 +1,17 @@
+<div class="uk-background-primary uk-light">
+
+    <div class="uk-container">
+        <nav class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar="">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="/login">
+                    <img src="../../assets/images/icon.png" class="logo" alt="MagniLearn">
+                </a>
+                <ul class="uk-navbar-nav">
+                    <li *ngIf="userId == 1 || userId == 2"><a [routerLink]="['/dashboard/student']" routerLinkActive="uk-text-bold">Student</a></li>
+                    <li *ngIf="userId == 0"><a [routerLink]="['/dashboard/teacher']" routerLinkActive="uk-text-bold">Teacher</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</div>

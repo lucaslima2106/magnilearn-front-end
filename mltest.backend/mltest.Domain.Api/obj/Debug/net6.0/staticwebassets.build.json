@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FiARdw5R8PqnkJJImqfzLQb7x5NtVC3Xd9fwrqOjkxc=",
+  "Source": "mltest.Domain.Api",
+  "BasePath": "_content/mltest.Domain.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

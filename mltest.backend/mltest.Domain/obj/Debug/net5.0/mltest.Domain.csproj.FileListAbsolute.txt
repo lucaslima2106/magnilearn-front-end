@@ -1,0 +1,12 @@
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\bin\Debug\net5.0\mltest.Domain.deps.json
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\bin\Debug\net5.0\mltest.Domain.dll
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\bin\Debug\net5.0\mltest.Domain.pdb
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\obj\Debug\net5.0\mltest.Domain.csproj.AssemblyReference.cache
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\obj\Debug\net5.0\mltest.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\obj\Debug\net5.0\mltest.Domain.AssemblyInfoInputs.cache
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\obj\Debug\net5.0\mltest.Domain.AssemblyInfo.cs
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\obj\Debug\net5.0\mltest.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\obj\Debug\net5.0\mltest.Domain.dll
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\obj\Debug\net5.0\refint\mltest.Domain.dll
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\obj\Debug\net5.0\mltest.Domain.pdb
+C:\Dev\MAGNILEARN\mltest\mltest.backend\mltest.Domain\obj\Debug\net5.0\ref\mltest.Domain.dll
