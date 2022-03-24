@@ -21,7 +21,7 @@ export class LoginPageComponent{
         window.location.href = "/dashboard/student/" + this.userId;
         break;
       default:
-        window.location.href = "/dashboard/student/" + this.userId;
+        window.location.href = "/dashboard/teacher/0";
         break;
     }
   }
