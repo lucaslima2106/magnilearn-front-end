@@ -9,45 +9,44 @@ export class DataService {
     baseURL: string;
 
     constructor(private http: HttpClient) {
-        this.baseURL = "http://localhost:3000/";
-        //https://localhost:7085/magnilearn/dashboard/student/1
+        this.baseURL = "https://localhost:7085/magnilearn/dashboard/";
     }
 
     //User services
     getUserEffort(userId: number) {
-        return this.http.get<any>('https://localhost:7085/magnilearn/dashboard/student/' + userId + '/effort');
+        return this.http.get<any>(this.baseURL + '/student/' + userId + '/effort');
     }
 
     getUserPerformance(userId: number) {
-        return this.http.get<any[]>('https://localhost:7085/magnilearn/dashboard/student/' + userId + '/performance');
+        return this.http.get<any[]>(this.baseURL + '/student/' + userId + '/performance');
     }
 
     getUserLearnedVocabulary(userId: number) {
-        return this.http.get<any[]>('https://localhost:7085/magnilearn/dashboard/student/' + userId + '/learnedVocabulary');
+        return this.http.get<any[]>(this.baseURL + '/student/' + userId + '/learnedVocabulary');
     }
 
     getUserProgress(userId: number) {
-        return this.http.get<any>('https://localhost:7085/magnilearn/dashboard/student/' + userId + '/progress');
+        return this.http.get<any>(this.baseURL + '/student/' + userId + '/progress');
     }
 
     getUserGrade(userId: number) {
-        return this.http.get<any[]>('https://localhost:7085/magnilearn/dashboard/student/' + userId + '/grade');
+        return this.http.get<any[]>(this.baseURL + '/student/' + userId + '/grade');
     }
 
     //Teacher services
     getStudentsOverallPerformance() {
-        return this.http.get<any[]>('https://localhost:7085/magnilearn/dashboard/teacher/students-overall-performance');
+        return this.http.get<any[]>(this.baseURL + '/teacher/students-overall-performance');
     }
     
     getMostLearnedWords() {
-        return this.http.get<any[]>('https://localhost:7085/magnilearn/dashboard/teacher/get-most-learned-words');
+        return this.http.get<any[]>(this.baseURL + '/teacher/get-most-learned-words');
     }
     
     getBestRankedExercises() {
-        return this.http.get<any[]>('https://localhost:7085/magnilearn/dashboard/teacher/get-best-ranked-exercises');
+        return this.http.get<any[]>(this.baseURL + '/teacher/get-best-ranked-exercises');
     }
     
     getUsersGrades() {
-        return this.http.get<any[]>('https://localhost:7085/magnilearn/dashboard/teacher/get-users-grades');
+        return this.http.get<any[]>(this.baseURL + '/teacher/get-users-grades');
     }
 }
